@@ -1,0 +1,73 @@
+// Place all the styles related to the jobs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$color-dark: #174541;
+$color-light: #E2C6A7;
+$color-text: #4D2819;
+
+body {
+  background-color: $color-light;
+  color: $color-text;
+  font-family: helvetica;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  padding: 15px;
+  border: 1px solid $color-dark;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.index {
+  th {
+    border-bottom: 1px solid $color-dark;
+  }
+}
+
+th, td {
+  min-width: 200px;
+}
+
+.button_to {
+
+}
+
+.edit_delete {
+  display: block;
+  margin: 30px auto;
+  width: 200px;
+
+  a {
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+    background-color: $color-dark;
+    color: $color-light;
+    text-decoration: none;
+    padding: 10px 5px;
+    min-width: 75px;
+    float: left;
+  }
+
+  .btn2 {
+    float:right;
+  }
+}
+
+a.button {
+  clear: both;
+  text-align: center;
+  border-radius: 25px;
+  background-color: $color-dark;
+  color: $color-light;
+  display: block;
+  text-decoration: none;
+  padding: 15px 10px;
+  margin: 100px auto;
+  width: 200px;
+}

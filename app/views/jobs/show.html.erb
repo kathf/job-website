@@ -1,0 +1,27 @@
+<h1> Job Details </h1>
+
+<table class="show">
+  <tr>
+    <th>Job Title</th>
+    <td><%= link_to(@job.title, job_path(@job)) %></td>
+  </tr>
+  <tr>
+    <th>Company</th>
+    <td><%= @job.company %></td>
+  </tr>
+  <tr>
+    <th>Salary</th>
+    <td><%= number_to_currency(@job[:salary]) %></td>
+  </tr>
+  <tr>
+    <th>Views</th>
+    <td><%= @job.views %></td>
+  </tr>
+</table>
+
+<div class="edit_delete">
+  <%= link_to "Edit", edit_job_path(@job), class: "btn1" %>
+  <%= link_to "Delete", job_path(@job), method: :delete, class: "btn2", data: { confirm: "Are you sure?" } %>
+</div>
+
+<%= link_to "Return to All Job Listings", jobs_path, class: "button" %>

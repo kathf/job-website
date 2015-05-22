@@ -1,0 +1,7 @@
+<h1> Create a new Job posting: </h1>
+
+<p> Job title: </p>
+<%= form_for @job do |form| %>
+  <%= form.text_field :title %>
+  <%= form.submit %>
+<% end %>
